@@ -1,0 +1,32 @@
+{% extends "admin/change_form.html" %}
+{% block extrahead %}
+{{ block.super }}
+<script>
+  function modifyDateTimeWidgets() {
+    // Get nodeList of all p.datetime nodes
+    const dateTimeWidgets = document.querySelectorAll('p.datetime');
+
+    // Loop through dateTimeWidgets
+    for (const dateTimeWidget of dateTimeWidgets) {
+      // If screen is wider than 1024, remove br and add margin to end of first shortcuts
+      if (window.screen.width >= 1024) {
+        // Remove br
+        const br = dateTimeWidget.querySelector('br');
+        br.parentNode.removeChild(br);
+
+        // Add some margin after first shortcuts
+        const shortcuts = dateTimeWidget.querySelector('.datetimeshortcuts');
+        shortcuts.style.marginRight = '1rem';
+      }
+
+      // Add max-width to inputs (mostly for mobile)
+      const inputs = dateTimeWidget.querySelectorAll('input');
+      for (const input of inputs) {
+        input.style.maxWidth = '10rem';
+      }
+    }
+  }
+
+  window.addEventListener('load', modifyDateTimeWidgets);
+</script>
+{% endblock %}
