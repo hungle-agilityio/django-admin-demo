@@ -31,7 +31,14 @@ _How to setup and run app._
 python manage.py migrate
 ```
 
-4. Start app
+4. Create a super user
+
+```sh
+python manage.py createsuperuser
+```
+
+
+5. Start the development server
 
 ```sh
 python manage.py runserver 8080
