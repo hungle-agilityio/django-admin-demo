@@ -1,15 +1,3 @@
-.djai-dropdown-menu .djai-dropdown-menu__item {
-  background-color: #0c3c26;
-  border-radius: 5px 5px 0 0;
-}
-
-.djai-dropdown-menu .djai-dropdown-menu__item--active,
-.djai-dropdown-menu .djai-dropdown-menu__item:active,
-.djai-dropdown-menu .djai-dropdown-menu__item:hover,
-.djai-dropdown-menu .djai-dropdown-menu__item:focus {
-  background-color: #44b78b;
-}
-
 .module {
   margin-bottom: 10px !important;
 }

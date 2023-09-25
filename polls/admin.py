@@ -35,7 +35,7 @@ class CustomAdminSite(admin.AdminSite):
     def get_urls(self):
         return [
             path(
-                "custom_page/",
+                "polls/custom_page/",
                 self.admin_view(self.custom_page),
                 name="custom_page"
             )

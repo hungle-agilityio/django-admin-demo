@@ -33,6 +33,7 @@ SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 INSTALLED_APPS = [
     "polls",
+    "core",
     "admin_interface",
     "colorfield",
     'django.contrib.admin',

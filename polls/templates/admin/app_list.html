@@ -7,23 +7,25 @@
     <div class="app-{{ app.app_label }} module{% if app.app_url in request.path|urlencode %} current-app{% endif %}">
       <table>
         <caption>
-          <a href="{{ app.app_url }}" class="section" title="{% blocktranslate with name=app.name %}Models in the {{ name }} application{% endblocktranslate %}">{{ app.name }}</a>
+          <a href="{{ app.models.0.admin_url }}" class="section" title="{% blocktranslate with name=app.name %}Models in the {{ name }} application{% endblocktranslate %}"><i class="{{app.icon}}"></i>  {{ app.name }}</a>
         </caption>
         {% for model in app.models %}
           <tr class="model-{{ model.object_name|lower }}{% if model.admin_url in request.path|urlencode %} current-model{% endif %}">
             {% if model.admin_url %}
-              <th scope="row"><a href="{{ model.admin_url }}"{% if model.admin_url in request.path|urlencode %} aria-current="page"{% endif %} {% if blank %} target="_blank" {%endif%}>{{ model.name }}</a></th>
+              <th scope="row">
+                <a href="{{ model.admin_url }}"{% if model.admin_url in request.path|urlencode %} aria-current="page"{% endif %} {% if blank %} target="_blank" {%endif%}>{{ model.name }}</a>
+              </th>
             {% else %}
               <th scope="row">{{ model.name }}</th>
             {% endif %}
 
-            {% if model.add_url %}
+            <!-- {% if model.add_url %}
               <td><a href="{{ model.add_url }}" class="addlink">{% translate 'Add' %}</a></td>
             {% else %}
               <td></td>
-            {% endif %}
+            {% endif %} -->
 
-            {% if model.admin_url and show_changelinks %}
+            <!-- {% if model.admin_url and show_changelinks %}
               {% if model.view_only %}
                 <td><a href="{{ model.admin_url }}" class="viewlink">{% translate 'View' %}</a></td>
               {% else %}
@@ -31,7 +33,7 @@
               {% endif %}
             {% elif show_changelinks %}
               <td></td>
-            {% endif %}
+            {% endif %} -->
           </tr>
         {% endfor %}
       </table>
