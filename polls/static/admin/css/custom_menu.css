@@ -9,3 +9,7 @@
 .djai-dropdown-menu .djai-dropdown-menu__item:focus {
   background-color: #44b78b;
 }
+
+.module {
+  margin-bottom: 10px !important;
+}

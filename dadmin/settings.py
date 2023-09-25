@@ -35,8 +35,6 @@ INSTALLED_APPS = [
     "polls",
     "admin_interface",
     "colorfield",
-    "django_admin_index",
-    "ordered_model",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -17,6 +17,7 @@ _How to setup and run app._
 
 ```sh
  git clone git@github.com:hungle-agilityio/django-admin-demo.git
+ cd django-admin-demo
 ```
 
 2. Install requirements

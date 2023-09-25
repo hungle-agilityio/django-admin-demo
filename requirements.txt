@@ -1,6 +1,5 @@
 asgiref==3.7.2
 Django==3.2.21
-django-admin-index==3.1.0
 django-admin-interface==0.26.1
 django-colorfield==0.10.1
 django-grappelli==3.0.7
