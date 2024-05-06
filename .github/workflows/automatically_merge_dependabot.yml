@@ -1,0 +1,25 @@
+name: Dependabot
+on:
+  pull_request:
+    - branches: [ develop ]
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '21'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Dependabot
+        uses: dependabot/dependabot-core@v0.255.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          directory: "/" # Path to package manager files
