@@ -1,14 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "npm" # for npm packages
-    directory: "/" # path to package.json
+  - package-ecosystem: 'pip' # for Python packages
+    directory: '/' # path to requirements.txt
     schedule:
-      interval: "daily" # adjust as needed
-  - package-ecosystem: "pip" # for Python packages
-    directory: "/" # path to requirements.txt
-    schedule:
-      interval: "daily" # adjust as needed
-  - package-ecosystem: "docker" # for Dockerfile
-    directory: "/" # path to Dockerfile
-    schedule:
-      interval: "daily" # adjust as needed
+      interval: 'daily' # adjust as needed
