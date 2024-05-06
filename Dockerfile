@@ -29,4 +29,4 @@ RUN     pip install \
                 redis==4.5.4 \
                 requests \
                 six \
-                djangorestframework \
+                djangorestframework==2.3.13 \
