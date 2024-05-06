@@ -1,4 +1,4 @@
-FROM    python:3.9-slim-bullseye
+FROM    python:3.8
 
 RUN     apt update && \
         apt install -y default-libmysqlclient-dev gcc git pkg-config libxml2-dev libxmlsec1-dev libxmlsec1-openssl
