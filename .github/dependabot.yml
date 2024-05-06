@@ -5,13 +5,13 @@ updates:
     schedule:
       interval: 'daily' # adjust as needed
     commit-message:
-      # Prefix all commit messages with "[Dependabot:PIP] "
-      prefix: "[Dependabot:PIP] "
+      # Prefix all commit messages with "pip: "
+      prefix: "pip"
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
     commit-message:
-      # Prefix all commit messages with ""[Dependabot:NPM]""
-      prefix: ""[Dependabot:NPM]""
+      # Prefix all commit messages with "npm: "
+      prefix: "npm"
