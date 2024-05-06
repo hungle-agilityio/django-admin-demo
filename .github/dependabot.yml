@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: '' # for Python packages
+  - package-ecosystem: 'pip' # for Python packages
     directory: '/' # path to requirements.txt
     schedule:
       interval: 'daily' # adjust as needed
