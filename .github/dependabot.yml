@@ -17,8 +17,11 @@ updates:
       prefix: "npm"
 
   - package-ecosystem: "docker" # for Dockerfile
-    directory:
-      - "/dev"
-      - "/product"
+    directory: "/dev"
+    schedule:
+      interval: "daily" # adjust as needed
+
+  - package-ecosystem: "docker" # for Dockerfile
+    directory: "/product"
     schedule:
       interval: "daily" # adjust as needed
