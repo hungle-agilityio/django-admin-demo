@@ -16,10 +16,10 @@ updates:
       # Prefix all commit messages with "npm: "
       prefix: "npm"
 
-  - package-ecosystem: "docker" # for Dockerfile
-    directory: "/product"
-    schedule:
-      interval: "daily" # adjust as needed
+  # - package-ecosystem: "docker" # for Dockerfile
+  #   directory: "/product"
+  #   schedule:
+  #     interval: "daily" # adjust as needed
 
   - package-ecosystem: "docker" # for Dockerfile
     directory: "/"
