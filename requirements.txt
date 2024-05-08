@@ -2,7 +2,7 @@ asgiref==3.7.2
 Django==3.2.21
 django-admin-interface==0.16.1
 django-colorfield==0.10.1
-django-grappelli==3.0.7
+django-grappelli==4.0.1
 django-ordered-model==3.7.4
 mypy==1.5.1
 mypy-extensions==1.0.0
