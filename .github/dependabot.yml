@@ -19,3 +19,14 @@ updates:
     directory: "/development"
     schedule:
       interval: "daily"
+
+
+  - package-ecosystem: "pip"
+    directory: "/demo"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "pip"
+    directory: "/development"
+    schedule:
+      interval: "daily"
