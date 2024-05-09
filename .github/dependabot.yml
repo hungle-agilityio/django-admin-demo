@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/dev"
     schedule:
       interval: "daily"
   - package-ecosystem: "docker"
@@ -9,7 +9,7 @@ updates:
     schedule:
       interval: "daily"
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "/dev"
     schedule:
       interval: "daily"
   - package-ecosystem: "npm"
