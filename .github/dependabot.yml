@@ -1,18 +1,21 @@
 version: 2
 updates:
   - package-ecosystem: "docker"
-    directory: "/dev"
+    directory: "/demo"
     schedule:
       interval: "daily"
+
   - package-ecosystem: "docker"
-    directory: "/product"
+    directory: "/development"
     schedule:
       interval: "daily"
+
   - package-ecosystem: "npm"
-    directory: "/dev"
+    directory: "/demo"
     schedule:
       interval: "daily"
+
   - package-ecosystem: "npm"
-    directory: "/product"
+    directory: "/development"
     schedule:
       interval: "daily"
