@@ -17,8 +17,6 @@ updates:
       prefix: "npm"
 
   - package-ecosystem: docker
-    directory:
-      - "dev"
-      - "product"
+    directory: "/"
     schedule:
       interval: "daily"
