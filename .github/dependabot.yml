@@ -4,17 +4,15 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-  # - package-ecosystem: "docker"
-  #   directory: "/product"
-  #   schedule:
-  #     interval: "daily"
-  - package-ecosystem: "npm"
-    directory:
-      - "/"
-      - "/product"
+  - package-ecosystem: "docker"
+    directory: "/product"
     schedule:
       interval: "daily"
-  # - package-ecosystem: "npm"
-  #   directory: "/product"
-  #   schedule:
-  #     interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/product"
+    schedule:
+      interval: "daily"
