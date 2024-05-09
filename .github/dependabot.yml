@@ -1,22 +1,10 @@
 version: 2
 updates:
-  - package-ecosystem: 'pip' # for Python packages
-    directory: '/' # path to requirements.txt
-    schedule:
-      interval: 'daily' # adjust as needed
-    commit-message:
-      # Prefix all commit messages with "pip: "
-      prefix: "pip"
-
-  - package-ecosystem: "npm"
+  - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
-    commit-message:
-      # Prefix all commit messages with "npm: "
-      prefix: "npm"
-
-  - package-ecosystem: docker
-    directory: "/"
+  - package-ecosystem: "docker"
+    directory: "/product"
     schedule:
       interval: "daily"
