@@ -8,3 +8,11 @@ updates:
     directory: "/product"
     schedule:
       interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/product"
+    schedule:
+      interval: "daily"
